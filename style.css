@@ -1,0 +1,254 @@
+/* Basic styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e8eaee;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background: #373c47;
+    height: 50px;
+}
+/* Tabs*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin: 0 10px;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #343a40;
+    background-color: #38d9a9;
+}
+li a.active {
+    background-color: #38d9a9;
+    color: #343a40;
+    font-weight: bold;
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+}
+/*The footer with social media*/
+footer {
+    background-color: #e8eaee;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+    color: #373c47;
+}
+
+.social-media a:hover {
+    color: #38d9a9;
+}
+/*tab*/
+.tab {
+    display: none;
+}
+/*logo on the left side of nav*/
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo img {
+    height: 40px;
+}
+/*The resume button on the right side*/
+.resume-link a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #373c47;
+    padding: 14px 16px;
+    border-radius: 5px;
+}
+.resume-link a:hover {
+    color:#38d9a9;
+}
+/*Home tab classes*/
+.profile-section {
+    text-align: center;
+    flex-grow: 1;
+}
+.banner {
+    color: #373c47;
+}
+  
+.banner h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #373c47;
+}
+  
+.profile-section img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    margin-top: 10px;
+}
+
+.contact-section {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+    color: #373c47;
+    font-size: 20px;
+}
+
+.contact-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*The Project tab classes*/
+.project-section {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+ }
+
+.project-card {
+    background-color: #e8eaee;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 18px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.overlay {
+position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5%;
+}
+
+.description:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text p {
+    font-size: .78vw;
+}
+
+/* About tab classes*/
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .about-description {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    color: #373c47;
+  }
+
+  .about-description h2 {
+    max-width: 600px;
+  }
+
+  .about-description p {
+    font-size: 22px;
+    overflow-wrap: break-word;
+    max-width: 600px;
+  }
+
+  .profile-picture {
+    flex-basis: 50%;
+  }
+  
+  .profile-picture img {
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+  }
+  

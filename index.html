@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="C:\Users\Juan\web_profile\media\IMG_0413.PNG" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#" class="active" onclick="changeTab('home')">Home</a></li>
+                <li><a href="#" onclick="changeTab('projects')">Projects</a></li>
+                <li><a href="#" onclick="changeTab('about')">About</a></li>
+            </ul>
+            <div class="resume-link">
+                <a href="C:\Users\Juan\web_profile\media\Resume.pdf" target=".blank">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home" class="tab">
+            <div class="content">
+                <div class="banner">
+                    <h1>Juan Ramirez Mendoza</h1>
+                    <h2>Computer Engineer</h2>
+                </div>
+                <div class="profile-section">
+                    <img src="C:\Users\Juan\web_profile\media\IMG_0413.PNG" alt="Logo">
+                </div>
+                <div class="contact-section">
+                    <div class="contact-item">
+                        <a target="_blank">
+                            <i class="fa fa-envelope">&nbsp&nbspJuanjramirez347@gmail.com</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="tab" style="display: none;">
+            <div class="project-section">
+                <div class="project-card">
+                    <a href="https://www.youtube.com/watch?v=mAj7RHfJsQg">
+                    <h3>Low-Cost Water Quality Monitoring Buoy</h3>
+                    </a>
+                    <div class="description">
+                    <img src="C:\Users\Juan\web_profile\media\Buoy.jpg" class="image" alt="Project Image">
+                        <div class="overlay">
+                            <div class="text">
+                                <p>
+                                This research buoy was specifically designed as a cost-effective alternative to the FIU CREST research buoys, with a strong emphasis on affordability, reliability, and user-friendliness. The overall design consists of three primary subsystems: the processing unit, sensors, and power supply. <br><br>
+                                To address the project's constraints, the team opted for a Raspberry Pi to handle the data processing tasks. Additionally, the buoy incorporated temperature, conductivity, and turbidity sensors to gather essential data. For extended operational periods, an aftermarket module equipped with an external battery and solar panel capabilities was integrated. This configuration allowed the system to operate autonomously by running for approximately 16 hours on a single charge and utilizing solar panels to recharge the battery during daylight hours. <br><br>
+                                The buoy was specifically intended for deployment in shallow fresh water or coastal marine environments, where it would remain tethered to a point of interest. To optimize power consumption, the Raspberry Pi was programmed to operate for brief periods. The program would log the boot time and date, collect the necessary data, and subsequently shut down the Raspberry Pi. In essence, the Raspberry Pi's active duration would not exceed one minute. <br><br>
+                                To ensure the protection and functionality of the electronics, a 3D printed enclosure was devised. This enclosure effectively isolated the electronics while allowing the sensors to be submerged for data collection. However, the team encountered an issue with the 3D printer during the project, which necessitated improvisation to produce the final prototype enclosure. <br><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="tab" style="display: none;">
+            <!-- <h1>About Me</h1> -->
+            <div class="about-section">
+                <div class="profile-picture">
+                    <img src="C:\Users\Juan\web_profile\media\Pfp.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-description">
+                    <h2>Hi I'm Juan,</h2>
+                    <p>
+                        Born in Jacaltenango, Guatemala, I moved to Florida when I was eight years old.
+                        Persuing my dream of being an engineer, I embarked on a journey to
+                        Florida International University where I majored in Computer Engineering.
+                        The quote "Work Hard, Stay Humble, Stay Focused" resonates with my work ethic,
+                        reflecting my dedication to striving for success. I thrive on diligently pursuing
+                        my goals, yet always remembering where I came from.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/juan-ramirez-mendoza/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Juanram7" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script.jss"></script>
+</body>
+</html>
