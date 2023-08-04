@@ -61,6 +61,8 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: auto;
+    display: flex;
+    justify-content: space-between;
 }
 .social-media {
     margin-top: 10px;
@@ -297,4 +299,28 @@ position: absolute;
 .image-description {
     font-size: 30px;
     margin-top: 10px;
+}
+
+/* Skills section - home page */
+.skill-section h3 {
+    color:#373c47;
+}
+
+.skill-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.skill-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.skill-logo-git {
+    width: 110px;
+    height: 50px;
+    margin: 0 10px;
 }
