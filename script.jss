@@ -14,8 +14,16 @@ function changeTab(tabName) {
     }
     event.target.classList.add("active");
     
+    localStorage.setItem("activeTab", tabName)
 }
 //makes home the homepage
 window.addEventListener("load", function() {
-    changeTab('home');
+    var activeTab = localStorage.getItem("activeTab");
+
+    if(activeTab) {
+        changeTab(activeTab);
+    }
+    else{
+        changeTab('home');
+    }
 });
